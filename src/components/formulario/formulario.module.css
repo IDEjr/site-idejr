@@ -1,0 +1,126 @@
+.mainContainer {
+  background-image: linear-gradient(90deg, #382F76, #95C1AB);
+  color: rgb(56, 47, 118);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  text-align: center;
+}
+
+.value_form {
+  color: red;
+  font-weight: 300;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  margin-top: 4rem;
+}
+
+.form {
+  display: flex;
+  margin-top: 4rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-evenly;
+}
+
+.formContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.mediumField {
+  width: 100%;
+}
+
+.mediumField input {
+  color: white;
+  font-weight: 400;
+  width: 100%;
+  height: 40px;
+  margin-left: 0px;
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.mediumField .input_error {
+  outline: 1px solid red;
+}
+
+.mediumField .error_message {
+  color: red;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.mediumField input::placeholder {
+  color: white;
+  font-weight: 300;
+}
+
+.mediumField button {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.largeField {
+  width: 100%;
+}
+
+.largeField textarea {
+  color: white;
+  font-weight: 400;
+  width: 100%;
+  height: 200px;
+  margin-left: 0px;
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.largeField .input_error {
+  outline: 1px solid red;
+}
+
+.largeField .error_message {
+  color: red;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.largeField textarea::placeholder {
+  color: white;
+  font-weight: 300;
+}
+
+.largeField textarea:focus, .mediumField input:focus {
+  outline: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .form {
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .largeField textarea {
+    height: 100px
+  }
+}

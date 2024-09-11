@@ -1,0 +1,138 @@
+backend:
+  name: git-gateway
+  branch: main # Branch que vai mexer no repositório
+
+publish_mode: editorial_workflow # Para fazer um esquema de revisão de novas edições
+media_folder: "public/uploads" # Onde os arquivos de mídia serão armazenados
+public_folder: "/uploads" # Onde a parte de mídia vai poder ser acessada
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+
+search: false
+locale: 'pt'
+
+
+
+collections:
+
+  # PÁGINAS--------------------------------------------------------------------------------------------------------
+
+  - label: "Home"
+    name: "home"
+    files:
+      - label: "Seções"
+        name: "secoes"
+        file: "content/home/secoes.json"
+        extension: "json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+
+
+          - label: "Sobre"
+            name: "sobre"
+            widget: "object"
+            fields:
+              - {label: "Seção", name: "secao", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descricao", name: "descricao", widget: "string"}
+
+
+          - label: "Carrossel Cases"
+            name: "carrossel"
+            widget: "object"
+            fields:
+              - {label: "Seção", name: "secao", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string", pattern: ['^.{1,40}$', "Máximo 20 carateres."]}
+
+
+          - label: "Painel Produtos"
+            name: "gridProdutos"
+            widget: "object"
+            fields:
+              - {label: "Seção", name: "secao", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+
+
+          - label: "Formulário"
+            name: "form"
+            widget: "object"
+            fields:
+              - {label: "Título", name: "titulo", widget: "string"}
+
+
+# OBJETOS--------------------------------------------------------------------------------------------------------
+
+  - label: "Cases"
+    name: "cases"
+    extension: "json"
+    description: "Cases da IDE Jr."
+    folder: "content/cases"
+    create: true
+    slug: "{{fields.titulo}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "Visível", name: "bool", widget: "boolean", default: true}
+      - {label: "Produto", name: "produto", widget: "relation", collection: "produtos", search_fields: ["produto"], display_fields: ["produto"], value_field: "produto", default: ["Outros"]}
+      - {label: "Data", name: "data", widget: "date", date_format: "DD.MM.YYYY"}
+      - {label: "Título", name: "titulo", widget: "string", pattern: ['^.{1,40}$', "Máximo 40 carateres."]}
+      - {label: "Imagem", name: "imagem", widget: "image"}
+      - {label: "Link", name: "link", widget: "string"}
+
+
+
+  - label: "Produtos"
+    name: "produtos"
+    extension: "json"
+    description: "Produtos da IDE Jr."
+    folder: "content/produtos"
+    create: true
+    slug: "{{fields.produto}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "Visível", name: "bool", widget: "boolean", default: true}
+      - {label: "Produto", name: "produto", widget: "string", pattern: ['^.{1,40}$', "Máximo 35 carateres."]}
+      - {label: "Imagem", name: "imagem", widget: "image"}
+      - {label: "Descrição", name: "descricao", widget: "text", pattern: ['^.{1,500}$', "Máximo 500 carateres."]}
+
+
+#OUTROS--------------------------------------------------------------------------------------------------------
+  - label: "Navbar"
+    name: "nav"
+    editor:
+      preview: false
+    files:
+      - label: "Navbar"
+        name: "navbar"
+        file: "content/nav/navbar.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Background", name: "background", widget: "image"}
+
+
+
+  - label: "Contato"
+    name: "contato"
+    editor:
+      preview: false
+    files:
+      - label: "Contato"
+        name: "contato"
+        file: "content/contato/contato.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Celular", name: "celular", widget: "string"}
+          - {label: "Github", name: "github", widget: "string"}
+          - {label: "Linkedin", name: "linkedin", widget: "string"}
+          - {label: "Instagram", name: "instagram", widget: "string"}
+          - {label: "Facebook", name: "facebook", widget: "string"}

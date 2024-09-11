@@ -1,0 +1,165 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(56, 47, 118, 0.9);
+  color: white;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  z-index: 999;
+}
+
+.logo {
+  margin-left: 100px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  color: #d9d9d9;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.sections {
+  margin: 0 1rem;
+  color: #D9D9D9;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.sections:hover {
+  font-size: 1.3rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero {
+  position: relative;
+  top: -70px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.inicio {
+  margin-left: 150px;
+  width: 600px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  color: white;
+  font-weight: 500;
+}
+
+.texto {
+  color: white;
+}
+
+.barsBtn, .timesBtn {
+  display: none;
+  position: absolute;
+  right: 50px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgba(56, 47, 118, 0.1);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.barsBtn:hover, .timesBtn:hover {
+  background-color: rgba(56, 47, 118, 0.1);
+}
+
+.barsBtn:active, .timesBtn:active {
+  border: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .barsBtn {
+    display: block;
+  }
+
+  .responsiveBars {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .responsiveTimes {
+    display: block;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    top: 120px;
+    height: 250px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sections {
+    margin: 0 1rem;
+    color: rgba(56, 47, 118);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transition: 0.4s ease;
+    cursor: pointer;
+  }
+
+  .responsiveNav {
+    transform: translateX(-100%);
+    display: flex;
+  }
+
+  .inicio {
+    margin-left: 100px;
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .inicio {
+    margin-left: 100px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .inicio {
+    margin: auto;
+    justify-content: center;
+    width: 300px;
+  }
+}

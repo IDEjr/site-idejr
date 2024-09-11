@@ -1,0 +1,223 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --fa-primary-color: rgb(56, 47, 118);
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  background-color: white;
+  height: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  /* background-color: white; */
+  color: black;
+}
+
+body {
+  width: 100%;
+  color: black;
+  height: auto;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: rgb(56, 47, 118);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  background: none;
+  font-size: 1rem;
+  color: black;
+}
+
+textarea {
+  color: black;
+}
+
+h1{
+  font-size: 2.5rem;
+  color: rgb(56, 47, 118);
+}
+
+h2{
+  font-size: 2rem;
+  color: rgb(56, 47, 118);
+}
+
+h3{
+  font-size: 1.5rem;
+  color: rgb(56, 47, 118);
+}
+
+button {
+  font-size: 1.2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+button:hover {
+  background-color: rgb(56, 47, 118);
+  color: white;
+  border: none;
+}
+
+button:active {
+  border: 2px solid rgb(56, 47, 118);
+  background-color: transparent;
+  color: rgb(56, 47, 118);
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(56, 47, 118);
+}
+
+/* header .navBtn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+} */
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  header .navBtn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: white;
+    z-index: 999;
+    transition: 1s;
+  }
+
+  header .responsiveNav {
+    transform: translateY(100vh);
+  }
+
+  nav .navCloseBtn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    /* font-size: 1rem; */
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  /* h2 {
+    font-size: 1.7rem;
+  } */
+
+  /* h3 {
+    font-size: 1.2rem;
+  } */
+
+  /* button {
+    font-size: 1rem;
+  } */
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}

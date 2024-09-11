@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* aspect-ratio: 2/3; */
+  /* aspect-ratio: 3/4; */
+  aspect-ratio: 4/5;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: solid 2px rgb(56, 47, 118);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 15px 0px, rgba(0, 0, 0, 0.19) 0px 6px 10px 0px;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dados {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  font-style: italic;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.img {
+  position: relative;
+  width: 70%;
+  height: 30%;
+  overflow: hidden;
+  display: block;
+}
+
+.produto {
+  display: flex;
+  justify-content: center;
+  color: rgb(56, 47, 118);
+  font-weight: bolder;
+  /* font-size: 140%; */
+  word-wrap: break-word;
+}
+
+.descricao {
+  /* font-size: 100%; */
+  color: rgb(160, 160, 160);
+}
+
+
+@media only screen and (max-width: 577px) {
+
+  .container {
+    aspect-ratio: 5/6;
+  }
+
+  .produto {
+    display: flex;
+    /* font-size: 200%; */
+    word-wrap: break-word;
+  }
+  
+  .descricao {
+    /* font-size: 150%; */
+  }
+
+  .dados h4 {
+    font-size: 1.5rem;
+  }
+}
+

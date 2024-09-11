@@ -1,0 +1,18 @@
+{
+  "carrossel": {
+    "titulo": "Alguns projetos que já fizemos",
+    "secao": "Portfólio"
+  },
+  "gridProdutos": {
+    "titulo": "O que você precisa?",
+    "secao": "Produtos"
+  },
+  "sobre": {
+    "descricao": "A IDE é a empresa júnior dos cursos Ciência e Engenharia de Computação da Universidade Federal do Rio Grande do Sul. Formada por alunos interessados em se tornarem empreendedores e profissionais excepcionais, a IDE fornece soluções em software, como sites e sistemas, com preços abaixo do mercado aliados à excelência da UFRGS, o Instituto de Informática e seus professores, que fornecem apoio técnico e aconselhamento aos estudantes.",
+    "titulo": "Nós te ajudamos a colocar o seu negócio na era digital",
+    "secao": "Quem somos"
+  },
+  "form": {
+    "titulo": "Quer falar conosco?"
+  }
+}
