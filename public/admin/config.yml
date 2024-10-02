@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # Branch que vai mexer no repositório
+  branch: master # Branch que vai mexer no repositório
 
 publish_mode: editorial_workflow # Para fazer um esquema de revisão de novas edições
 media_folder: "public/uploads" # Onde os arquivos de mídia serão armazenados
