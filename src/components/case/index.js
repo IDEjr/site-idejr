@@ -11,7 +11,7 @@ export default function Case({ imagem, link }) {
                     <Image
                       src={imagem}
                       fill
-                      style={{objectFit: 'cover'}}
+                      style={{objectFit: 'contain'}}
                       alt="Case"
                     />
                 </div>
