@@ -1,5 +1,5 @@
 .mainContainer {
-  background-image: linear-gradient(90deg, #382F76, #95C1AB);
+  background-image: linear-gradient(90deg, #382f76, #95c1ab);
   color: rgb(56, 47, 118);
   justify-content: center;
   display: flex;
@@ -108,10 +108,10 @@
   font-weight: 300;
 }
 
-.largeField textarea:focus, .mediumField input:focus {
+.largeField textarea:focus,
+.mediumField input:focus {
   outline: none;
 }
-
 
 @media only screen and (max-width: 800px) {
   .form {
@@ -121,6 +121,6 @@
   }
 
   .largeField textarea {
-    height: 100px
+    height: 100px;
   }
 }

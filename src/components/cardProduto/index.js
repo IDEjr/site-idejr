@@ -1,8 +1,7 @@
-import Image from 'next/image'
-import styles from './cardProduto.module.css'
+import Image from "next/image";
+import styles from "./cardProduto.module.css";
 
 export default function CardProduto({ produto, descricao, imagem }) {
-
   return (
     <>
       <div className={styles.link}>
@@ -12,9 +11,9 @@ export default function CardProduto({ produto, descricao, imagem }) {
               <Image
                 src={imagem}
                 fill
-                style={{objectFit: 'contain'}}
-                alt='Servico'
-                />
+                style={{ objectFit: "contain" }}
+                alt="Servico"
+              />
             </div>
             <div className={styles.dados}>
               <h4 className={styles.produto}>{produto}</h4>

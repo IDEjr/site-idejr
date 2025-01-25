@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --fa-primary-color: rgb(56, 47, 118);
@@ -12,12 +12,12 @@ html {
   height: 100%;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
 
@@ -57,17 +57,17 @@ textarea {
   color: black;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
   color: rgb(56, 47, 118);
 }
 
-h2{
+h2 {
   font-size: 2rem;
   color: rgb(56, 47, 118);
 }
 
-h3{
+h3 {
   font-size: 1.5rem;
   color: rgb(56, 47, 118);
 }
@@ -121,9 +121,6 @@ header nav {
   display: flex;
   align-items: center;
 }
-
-
-
 
 @media only screen and (max-width: 1024px) {
   header .navBtn {
@@ -182,9 +179,7 @@ header nav {
   }
 }
 
-
 @media only screen and (max-width: 768px) {
-
   h1 {
     font-size: 1.5rem;
   }
@@ -202,9 +197,7 @@ header nav {
   } */
 }
 
-
 @media only screen and (max-width: 480px) {
-
   h1 {
     font-size: 1.5rem;
   }

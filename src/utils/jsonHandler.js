@@ -16,7 +16,7 @@ export function handleJSONfiles(filePath) {
     const json = JSON.parse(fileData.toString());
     posts.push({
       ...json,
-      fileName: file.split(".")[0]
+      fileName: file.split(".")[0],
     });
   });
   return posts;
